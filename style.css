@@ -1,0 +1,92 @@
+.container {
+  min-height: 500px;
+  margin-top: 20px;
+  border: rgb(151, 146, 146) solid 1px;
+}
+
+.toolbar {
+  border-bottom: rgb(151, 146, 146) solid 1px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+.toolbar .toolbar-action {
+  min-width: 80px;
+  width: 120px;
+  display: inline-block;
+}
+
+.toolbar .toolbar-action.right-aligned-action {
+  align-self: flex-end;
+  float: right;
+}
+
+.toolbar-action .action-label{
+  display: inline-block;
+}
+
+.tree-menu {
+  border-right: rgb(151, 146, 146) solid 1px;
+  height: 500px;
+  overflow: auto;
+  overflow-y: scroll;
+}
+
+.tree-menu ul li {
+  list-style: none;
+  min-width: 100px;
+  white-space: nowrap;
+}
+.tree-menu > ul {
+  padding: 20px 0px;
+}
+
+.folder::before {
+  content: "\23F5";
+}
+.folder-icon {
+  margin-right: 10px;
+}
+
+.file-item-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+.file-list {
+  padding-left: 40px;
+}
+.file-item{
+  display: inline-block;
+  min-width: 50px;
+  width: 60px;
+  margin-top: 20px;
+}
+
+.file-icon {
+  padding-bottom: 10px;
+  display: block;
+}
+.file {
+  padding: 10px;
+}
+.right-aligned-icon {
+  float: right;
+}
+.toolbar-action-container {
+  padding: 20px;
+}
+@media (max-width: 576px) {
+  .toolbar .toolbar-action.right-aligned-action, .toolbar-action .action-label {
+    display: none;
+  }
+  .toolbar-action-container .toolbar-action {
+    display: block;
+  }
+}

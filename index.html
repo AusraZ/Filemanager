@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>File Manager</title>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+      integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <div class="container">
+
+      <div class="toolbar row">
+        <div class="toolbar-action-container col-xs-12">
+
+          <div class="toolbar-action">
+            <span class="glyphicon glyphicon-folder-close">
+            <div class="action-label">New folder</div>
+          </div>
+
+          <div class="toolbar-action">
+            <span class="glyphicon glyphicon-upload">
+              <span class="action-label">Upload files</span></span>
+          </div>  
+
+          <div class="toolbar-action right-aligned-action">
+            <span class="glyphicon glyphicon-th-large right-aligned-icon"></span>
+          </div>  
+
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="tree-menu col-xs-3">
+          <ul class="tree">
+            <li>
+              <span data-toggle="collapse" data-target="#folder1" class="folder">
+                <span class="glyphicon glyphicon-folder-open folder-icon"></span>
+                Folder 1
+              </span>
+              <ul class="" id="folder1">
+                <li>File 1</li>
+                <li>File 2</li>
+                <li>
+                  <span
+                    data-toggle="collapse"
+                    data-target="#folder1-1"
+                    class="folder"
+                    ><span class="glyphicon glyphicon-folder-open folder-icon"></span>Folder 1 1</span>
+                  <ul class="" id="folder1-1">
+                    <li>File 1</li>
+                    <li>File 2</li>
+                    <li>
+                      <span
+                        data-toggle="collapse"
+                        data-target="#folder1-1-1"
+                        class="folder"
+                        ><span class="glyphicon glyphicon-folder-open folder-icon"></span>Folder 1 1 1</span>
+                      <ul class="" id="folder1-1-1">
+                        <li>File 1</li>
+                        <li>File 2</li>
+                        <li>File 3</li>
+                        <li>File 4</li>
+                      </ul>
+                    </li>
+                    <li>
+                      <span
+                        data-toggle="collapse"
+                        data-target="#folder1-1-2"
+                        class="folder"
+                        ><span class="glyphicon glyphicon-folder-open folder-icon"></span>Folder 1 1 2</span>
+                      <ul class="" id="folder1-1-2">
+                        <li>File 1</li>
+                        <li>File 2</li>
+                        <li>File 3</li>
+                        <li>File 4</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <span
+                    data-toggle="collapse"
+                    data-target="#folder1-2"
+                    class="folder"
+                    ><span class="glyphicon glyphicon-folder-open folder-icon"></span>Folder 1 2</span>
+                  <ul class="" id="folder1-2">
+                    <li>File 1</li>
+                    <li>File 2</li>
+                    <li>
+                      <span
+                        data-toggle="collapse"
+                        data-target="#folder1-2-1"
+                        class="folder"
+                        ><span class="glyphicon glyphicon-folder-open folder-icon"></span>Folder 1 2 1</span>
+                      <ul class="" id="folder1-2-1">
+                        <li>File 1</li>
+                        <li>File 2</li>
+                        <li>File 3</li>
+                        <li>File 4</li>
+                      </ul>
+                    </li>
+                    <li>
+                      <span
+                        data-toggle="collapse"
+                        data-target="#folder1-2-2"
+                        class="folder"
+                        ><span class="glyphicon glyphicon-folder-open folder-icon"></span>Folder 1 2 2</span>
+                      <ul class="" id="folder1-2-2">
+                        <li>File 1</li>
+                        <li>File 2</li>
+                        <li>File 3</li>
+                        <li>File 4</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <span
+                    data-toggle="collapse"
+                    data-target="#folder1-3"
+                    class="folder"
+                    ><span class="glyphicon glyphicon-folder-open folder-icon"></span>Folder 1 3</span>
+                  <ul class="" id="folder1-3">
+                    <li>File 1</li>
+                    <li>File 2</li>
+                    <li>
+                      <span
+                        data-toggle="collapse"
+                        data-target="#folder1-3-1"
+                        class="folder"
+                        ><span class="glyphicon glyphicon-folder-open folder-icon"></span>Folder 1 3 1</span>
+                      <ul class="" id="folder1-3-1">
+                        <li>File 1</li>
+                        <li>File 2</li>
+                        <li>File 3</li>
+                        <li>File 4</li>
+                      </ul>
+                    </li>
+                    <li>
+                      <span
+                        data-toggle="collapse"
+                        data-target="#folder1-3-2"
+                        class="folder"
+                        ><span class="glyphicon glyphicon-folder-open folder-icon"></span>Folder 1 3 2</span>
+                      <ul class="" id="folder1-3-2">
+                        <li>File 1</li>
+                        <li>File 2</li>
+                        <li>File 3</li>
+                        <li>File 4</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+
+
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="file-list col-xs-9">
+
+          <div class="row">
+            <div class="col-xs-12 file-item-container">
+
+              <div class="file-item">
+                <span class="glyphicon glyphicon-file file-icon"></span>
+                <span class="file-name">File</span>
+              </div>
+
+              <div class="file-item">
+                <span class="glyphicon glyphicon-file file-icon"></span>
+                <span class="file-name">File</span>
+              </div>
+
+              <div class="file-item">
+                <span class="glyphicon glyphicon-file file-icon"></span>
+                <span class="file-name">File</span>
+              </div>
+
+              <div class="file-item">
+                <span class="glyphicon glyphicon-file file-icon"></span>
+                <span class="file-name">File</span>
+              </div>
+
+              <div class="file-item">
+                <span class="glyphicon glyphicon-file file-icon"></span>
+                <span class="file-name">File</span>
+              </div>
+
+              <div class="file-item">
+                <span class="glyphicon glyphicon-file file-icon"></span>
+                <span class="file-name">File</span>
+              </div>
+
+              <div class="file-item">
+                <span class="glyphicon glyphicon-file file-icon"></span>
+                <span class="file-name">File</span>
+              </div>
+
+              <div class="file-item">
+                <span class="glyphicon glyphicon-file file-icon"></span>
+                <span class="file-name">File</span>
+              </div>
+
+              <div class="file-item">
+                <span class="glyphicon glyphicon-file file-icon"></span>
+                <span class="file-name">File</span>
+              </div>
+
+              <div class="file-item">
+                <span class="glyphicon glyphicon-file file-icon"></span>
+                <span class="file-name">File</span>
+              </div>
+
+              <div class="file-item">
+                <span class="glyphicon glyphicon-file file-icon"></span>
+                <span class="file-name">File</span>
+              </div>
+
+              <div class="file-item">
+                <span class="glyphicon glyphicon-file file-icon"></span>
+                <span class="file-name">File</span>
+              </div>
+
+              <div class="file-item">
+                <span class="glyphicon glyphicon-file file-icon"></span>
+                <span class="file-name">File</span>
+              </div>
+
+              <div class="file-item">
+                <span class="glyphicon glyphicon-file file-icon"></span>
+                <span class="file-name">File</span>
+              </div>
+
+              <div class="file-item">
+                <span class="glyphicon glyphicon-file file-icon"></span>
+                <span class="file-name">File</span>
+              </div>
+
+              <div class="file-item">
+                <span class="glyphicon glyphicon-file file-icon"></span>
+                <span class="file-name">File</span>
+              </div>
+
+              <div class="file-item">
+                <span class="glyphicon glyphicon-file file-icon"></span>
+                <span class="file-name">File</span>
+              </div>
+
+              <div class="file-item">
+                <span class="glyphicon glyphicon-file file-icon"></span>
+                <span class="file-name">File</span>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-1.12.4.min.js"
+      integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+      integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
